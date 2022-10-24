@@ -4,7 +4,7 @@
 import codecs, sys 
 sys.stdout = codecs.getwriter('utf8')(sys.stdout.buffer)
 import cgi
-
+#改這邊
 #連線DB
 from dbConfig import conn, cur
 #先印出http 表頭
@@ -26,7 +26,7 @@ print("""
 </form>
  <hr>
 """)
-#改這邊喔
+#改這邊
 #查詢
 sql="select id, title,msg, nickname,likes from guestbook order by likes desc;"
 cur.execute(sql)
