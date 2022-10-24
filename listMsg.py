@@ -26,7 +26,7 @@ print("""
 </form>
  <hr>
 """)
-
+#改這邊喔
 #查詢
 sql="select id, title,msg, nickname,likes from guestbook order by likes desc;"
 cur.execute(sql)
